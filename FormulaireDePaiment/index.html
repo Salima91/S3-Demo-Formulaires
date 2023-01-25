@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scipt.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post">
+<h1>Formulaire de paiment</h1>
+<h4>informations de contact</h4>
+    <div id="firstSection">
+  <label>Nom:  <input name="nom" type="text" required/></label><br/>
+  <label>Courriel <input name="courriel" type="email" required placeholder="salima@gmail.com"
+                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+  /></label><br/>
+    <label>Téléphone <input name="tel" type="tel" required placeholder="819-555-5555"><br>
+        <label>Compagnie <input name="tel" type="tel" >   </label><br>
+    <label>Province:  <select  id="state" name="state">
+        <option value="QC">Quebec</option>
+        <option value="AB">Alberta</option>
+        <option value="BC">British Columbia</option>
+        <option value="MB">Manitoba</option>
+        <option value="NB">New Brunswick</option>
+        <option value="NL">Newfoundland and Labrador</option>
+        <option value="NS">Nova Scotia</option>
+        <option value="ON">Ontario</option>
+        <option value="PE">Prince Edward Island</option>
+        <option value="SK">Saskatchewan</option>
+        <option value="NT">Northwest Territories</option>
+        <option value="NU">Nunavut</option>
+        <option value="YT">Yukon</option>
+    </select></label><br/>
+<label>
+    </div>
+</form>
+</body>
+</html>

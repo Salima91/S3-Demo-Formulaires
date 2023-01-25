@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>Formulaire</title>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Formulaire d'inscription</h1>
   <form method="post" action="connecte.html">
     <label>Nom <input name="nom" type="text" required/></label><br/>
     <label>Prénom <input name="prenom" type="text" required/></label><br/>
-    <label>Courriel <input name="courriel" type="email" required/></label><br/>
-    <label>Téléphone <input name="tel" type="tel" required /></label><br/>
+    <label>Courriel <input name="courriel" type="email" required placeholder="salima@gmail.com"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+    /></label><br/>
+    <label>Téléphone <input name="tel" type="tel" required placeholder="819-555-5555"
+    pattern="819-[0-9]{3}-[0-9]{4}"/></label><br/>
 <!--bouton radio-->
-    <label>sexe
-      <input name="sexe" type="radio" value="F">Femme</input>
-      <input name="sexe" type="radio" value="H">Homme</input>
-      <input name="sexe" type="radio" value="A">Autre</input>
+    <label>sexe<br>
+      <input name="sexe" type="radio" value="F">Femme</input><br>
+      <input name="sexe" type="radio" value="H">Homme</input><br>
+      <input name="sexe" type="radio" value="A">Autre</input><br>
     </label><br/>
 <!--    select la value  des options permet de recuperer les données -->
     <label>Pays
@@ -39,7 +43,6 @@
     <!-- submit exécute l'action du form sauf si la fonction dans onclick retourne false -->
     <input type="submit" value="Connexion" onclick="return valider()" />
     <input type="reset" value="Effacer">
-    <input type="button" value="Popup" onclick="alert('allo')">
   </form>
 </body>
 </html>
